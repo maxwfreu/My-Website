@@ -1,0 +1,34 @@
+.intro-wrap {
+  margin-top: 40px;
+  text-align: center;
+
+  .intro-image {
+    text-align: center;
+  }
+  img {
+    height: 210px;
+    width: 210px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid $blue;
+  }
+}
+
+.intro-things {
+  margin-top: 40px;
+}
+
+.intro-row {
+  position: relative;
+}
+
+@media (min-width: $sm) {
+  .intro-wrap {
+    text-align: left;
+    
+    img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+}

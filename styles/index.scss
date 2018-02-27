@@ -1,0 +1,30 @@
+@import
+  'normalize.css',
+  'animate',
+  'constants',
+  'nav',
+  'landing-page';
+
+@font-face {
+  font-family: RobotoMonoLight;
+  src: url(../static/Roboto_Mono/RobotoMono-Light.ttf);
+}
+
+html, body {
+  font-family: 'RobotoMonoLight' !important;
+  background-color: $offwhite;
+}
+
+.flex-body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.flex-content {
+  flex: 1 0 auto;
+}
+
+.flex-footer {
+  flex-shrink: 0;
+}
