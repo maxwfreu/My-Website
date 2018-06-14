@@ -41,7 +41,7 @@ export default class extends React.Component {
                 </li>
                 <li>
                   <p>This website!</p>
-                  <p> {`I built this site to familiarize myself with some of the tooling we used for Crypto Tax Report. This is my side-side project for when I am too exausted out for my side projects.`}</p>
+                  <p> {`I built this site to familiarize myself with some of the tooling we used for Crypto Tax Report. This is my side-side project for when I am too exausted for my side projects.`}</p>
                 </li>
               </ul>
             </div>

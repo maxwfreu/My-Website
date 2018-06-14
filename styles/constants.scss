@@ -43,23 +43,23 @@ h1 {
 }
 
 p,a {
-  @include font-size(17px)
+  @include font-size(16px)
 }
 
 @media (min-width: $sm) {
   p,a {
-    @include font-size(20px)
+    @include font-size(16px)
   }
 }
 
 @media (min-width: $md) {
   p,a {
-    @include font-size(20px)
+    @include font-size(16px)
   }
 }
 
 @media (min-width: $lg) {
   p,a {
-    @include font-size(20px)
+    @include font-size(16px)
   }
 }
