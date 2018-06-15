@@ -11,7 +11,6 @@ export default class Main extends React.Component {
           title="Max Freundlich"
           description={`Hey! You found my website!`}
         />
-        <Nav className={this.props.className}/>
         <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
         {this.props.children}
       </div>

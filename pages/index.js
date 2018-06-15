@@ -1,25 +1,16 @@
 import React from 'react';
-import Main from '../components/main';
 import Link from 'next/link'
+import PropTypes from 'prop-types';
+import PageHeader from '../components/PageHeader';
 
-export default class extends React.Component {
+export default class Home extends React.Component {
   render() {
     return(
-      <Main>
-        <div className="intro-wrap container">
-          <div className="intro-row row">
-            <div className="animated slideInLeft intro-content col-md-6">
-              <h1> My name is Max Freundlich </h1>
-              <p> I like making things </p>
-            </div>
-            <div className="animated slideInRight intro-image circle col-md-6">
-              <img src="../static/images/me.jpg" alt="Me"/>
-            </div>
-          </div>
-        </div>
+      <div>
+        <PageHeader page={this.props.page} />
         <div className="container intro-things">
           <div className="row">
-            <div className="animated slideInRight intro-content col-sm-12">
+            <div className="intro-content col-sm-12">
               <h1> About me </h1>
               <p> {`I've seen every episode of futurama, most of them twice. Currently, I am working as a Software Engineer at FormSwift.`}</p>
               <p> I gradutated with a BS in Computer Science from Stanford University in 2017 </p>
@@ -28,7 +19,7 @@ export default class extends React.Component {
         </div>
         <div className="container intro-things">
           <div className="row">
-            <div className="animated slideInRight intro-content col-sm-12">
+            <div className="intro-content col-sm-12">
               <h1> Some things I have done </h1>
               <ul>
                 <li>
@@ -49,13 +40,18 @@ export default class extends React.Component {
         </div>
         <div className="container">
           <div className="row">
-            <div className="animated slideInRight intro-content col-sm-12">
+            <div className="animated intro-content col-sm-12">
               <h1> Contact Me </h1>
               <p> Email: mfreundlich1@gmail.com</p>
             </div>
           </div>
         </div>
-      </Main>
+      </div>
     )
   }
+}
+
+
+Home.propTypes = {
+  page: PropTypes.number.isRequired,
 }
