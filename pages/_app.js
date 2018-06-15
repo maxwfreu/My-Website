@@ -21,8 +21,6 @@ export default class MyApp extends App {
 
   render () {
     const {Component, pageProps, page} = this.props
-    console.log(pageProps)
-    console.log(page)
     return (
       <Container>
         <Main>

@@ -28,6 +28,7 @@ export default class Head extends Component {
         <meta property="og:image" content={this.props.ogImage || defaultOGImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-cave-dark.min.css" />
       </NextHead>
     );
   }
