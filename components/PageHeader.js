@@ -28,11 +28,17 @@ export default class PageHeader extends React.Component {
           <div className="intro-content">
             <h1> My name is Max Freundlich </h1>
             <p> I like making things </p>
+            <div className="link-icons">
+              <a href="https://github.com/maxwfreu" className="octocat" target="_blank" rel="noopener noreferrer" />
+              <a href="mailto:maxwfreu@alumni.stanford.edu" className="email"/>
+            </div>
+          </div>
+          <div className="page-navigation">
             <Link prefetch href="/">
               <a>Home</a>
             </Link>
-            <Link prefetch href="/about">
-              <a>About</a>
+            <Link prefetch href="/collection">
+              <a>Random CSS</a>
             </Link>
           </div>
         </div>

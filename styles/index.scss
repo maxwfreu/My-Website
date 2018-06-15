@@ -3,7 +3,8 @@
   'animate',
   'constants',
   'nav',
-  'landing-page';
+  'landing-page',
+  'collections';
 
 @font-face {
   font-family: RobotoMonoLight;
@@ -27,4 +28,11 @@ html, body {
 
 .flex-footer {
   flex-shrink: 0;
+}
+
+.page-navigation {
+  width: 10%;
+  a {
+    display: block
+  }
 }

@@ -24,7 +24,7 @@ export default class Home extends React.Component {
               <ul>
                 <li>
                   <a href="https://cryptotaxreport.io" target="_blank" rel="noopener noreferrer">Crypto Tax Report</a>
-                  <p> Myself and three of my friends built this site to help people calculate their capital gains on their crypto trades. </p>
+                  <p> Myself and three of my friends built this site to help people calculate their capital gains on their crypto trades. <strong>Temporarily took this site down due to some GDPR issues </strong></p>
                 </li>
                 <li>
                   <a href="https://github.com/maxwfreu/Next-Video-Chat" target="_blank" rel="noopener noreferrer">Next Video Chat</a>
@@ -35,14 +35,6 @@ export default class Home extends React.Component {
                   <p> {`I built this site to familiarize myself with some of the tooling we used for Crypto Tax Report. This is my side-side project for when I am too exausted for my side projects.`}</p>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="animated intro-content col-sm-12">
-              <h1> Contact Me </h1>
-              <p> Email: mfreundlich1@gmail.com</p>
             </div>
           </div>
         </div>
