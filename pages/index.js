@@ -13,7 +13,7 @@ export default class Home extends React.Component {
             <div className="intro-content col-sm-12">
               <h1> About me </h1>
               <p> {`I've seen every episode of futurama, most of them twice. Currently, I am working as a Software Engineer at FormSwift.`}</p>
-              <p> I gradutated with a BS in Computer Science from Stanford University in 2017 </p>
+              <p> I graduated with a BS in Computer Science from Stanford University in 2017 </p>
             </div>
           </div>
         </div>
