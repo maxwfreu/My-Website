@@ -23,12 +23,12 @@ export default class Home extends React.Component {
               <h1> Some things I have done </h1>
               <ul>
                 <li>
-                  <a href="https://cryptotaxreport.io" target="_blank" rel="noopener noreferrer">Crypto Tax Report</a>
-                  <p> Myself and three of my friends built this site to help people calculate their capital gains on their crypto trades. <strong>Temporarily took this site down due to some GDPR issues </strong></p>
-                </li>
-                <li>
                   <a href="https://github.com/maxwfreu/Next-Video-Chat" target="_blank" rel="noopener noreferrer">Next Video Chat</a>
                   <p> This is a video chat app built with Next.js, Socket.io, and WebRTC. This was a ton of fun to make as I had no experience with Socket.io or WebRTC - luckily there were some great resources from the open source community that I could learn from. It is still very much a work in progress - to get this to work fully I will need to spin up my own TURN server. </p>
+                </li>
+                <li>
+                  <p>Crypto Tax Report <strong>Temporarily took this site down due to some GDPR issues, but it will be back soon!</strong></p>
+                  <p> Myself and three of my friends built this site to help people calculate their capital gains on their crypto trades.</p>
                 </li>
                 <li>
                   <p>This website!</p>
