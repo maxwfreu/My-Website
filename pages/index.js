@@ -24,7 +24,7 @@ export default class Home extends React.Component {
               <ul>
                 <li>
                   <a href="https://watchitwednesday.com" target="_blank" rel="noopener noreferrer">Movies to watch on a Wednesday</a>
-                  <p>This is a website where I share my most medocire movie suggestions. Movies that are perfect for a day where youre exausted, need some form of entertainment, but can't be bothered to find anything good. In other words, a Wednesday. I built this with Next.js and Netlify.</p>
+                  <p>This is a website where I share my most mediocre movie suggestions. Movies that are perfect for a day where youre exausted, need some form of entertainment, but can't be bothered to find anything good. In other words, a Wednesday. I built this with Next.js and Netlify.</p>
                 </li>
                 <li>
                   <a href="https://github.com/maxwfreu/Next-Video-Chat" target="_blank" rel="noopener noreferrer">Next Video Chat</a>
