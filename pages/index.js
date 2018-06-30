@@ -23,6 +23,10 @@ export default class Home extends React.Component {
               <h1> Some things I have done </h1>
               <ul>
                 <li>
+                  <a href="https://watchitwednesday.com" target="_blank" rel="noopener noreferrer">Movies to watch on a Wednesday</a>
+                  <p>This is a website where I share my most medocire movie suggestions. Movies that are perfect for a day where youre exausted, need some form of entertainment, but can't be bothered to find anything good. In other words, a Wednesday. I built this with Next.js and Netlify.</p>
+                </li>
+                <li>
                   <a href="https://github.com/maxwfreu/Next-Video-Chat" target="_blank" rel="noopener noreferrer">Next Video Chat</a>
                   <p> This is a video chat app built with Next.js, Socket.io, and WebRTC. This was a ton of fun to make as I had no experience with Socket.io or WebRTC - luckily there were some great resources from the open source community that I could learn from. It is still very much a work in progress - to get this to work fully I will need to spin up my own TURN server. </p>
                 </li>
