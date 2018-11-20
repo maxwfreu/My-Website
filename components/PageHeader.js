@@ -33,20 +33,21 @@ export default class PageHeader extends React.Component {
               <a href="mailto:maxwfreu@alumni.stanford.edu" className="email"/>
             </div>
           </div>
-          <div className="page-navigation">
-            <Link prefetch href="/">
-              <a>Home</a>
-            </Link>
-            <Link prefetch href="/collection">
-              <a>Random CSS</a>
-            </Link>
-          </div>
         </div>
       </div>
     );
   }
 }
-
+/*
+  <div className="page-navigation">
+    <Link prefetch href="/">
+      <a>Home</a>
+    </Link>
+    <Link prefetch href="/collection">
+      <a>Random CSS</a>
+    </Link>
+  </div>
+  */
 PageHeader.propTypes = {
   page: PropTypes.number,
 }

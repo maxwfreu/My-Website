@@ -1,5 +1,6 @@
 {
-  "name": "create-next-example-app",
+  "name": "MyWebsite",
+  "description": "A website about me, Max",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -9,7 +10,7 @@
   "dependencies": {
     "glob": "^7.1.2",
     "next": "^6.0.3",
-    "node-sass": "^4.4.0",
+    "node-sass": "^4.11.0",
     "normalize.css": "^8.0.0",
     "path": "^0.12.7",
     "postcss-easy-import": "^3.0.0",

@@ -23,6 +23,10 @@ export default class Home extends React.Component {
               <h1> Some things I have done </h1>
               <ul>
                 <li>
+                  <a href="https://www.scrumptioustab.com/demo/" target="_blank" rel="noopener noreferrer">Scrumptious</a>
+                  <p>Scrumptious is a chrome extension that turns your new tab into a kanban board.</p>
+                </li>
+                <li>
                   <a href="https://watchitwednesday.com" target="_blank" rel="noopener noreferrer">Movies to watch on a Wednesday</a>
                   <p>This is a website where I share my most mediocre movie suggestions. Movies that are perfect for a day where youre exausted, need some form of entertainment, but can't be bothered to find anything good. In other words, a Wednesday. I built this with Next.js and Netlify.</p>
                 </li>
