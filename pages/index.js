@@ -23,7 +23,7 @@ export default class Home extends React.Component {
               <h1> Some things I have done </h1>
               <ul>
                 <li>
-                  <a href="https://www.scrumptioustab.com/demo/" target="_blank" rel="noopener noreferrer">Scrumptious</a>
+                  <a href="https://www.scrumptioustab.com" target="_blank" rel="noopener noreferrer">Scrumptious</a>
                   <p>Scrumptious is a chrome extension that turns your new tab into a kanban board.</p>
                 </li>
                 <li>
