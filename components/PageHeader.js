@@ -25,7 +25,7 @@ export default class PageHeader extends React.Component {
           <img src="../static/images/me.jpg" alt="Me"/>
           <div className="intro-content">
             <h1> My name is Max Freundlich </h1>
-            <p> Stanford University, 2018 </p>
+            <p> Stanford University, 2017 </p>
             <p> I like making things </p>
           </div>
         </div>
