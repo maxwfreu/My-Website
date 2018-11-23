@@ -20,18 +20,13 @@ export default class PageHeader extends React.Component {
 
   render() {
     return(
-      <div className={`intro-wrap ${this.state.pageStyle}`}>
-        <div className="intro-row container">
-          <div className="intro-image">
-            <img src="../static/images/me.jpg" alt="Me"/>
-          </div>
+      <div className="intro-wrap">
+        <div className="intro-row">
+          <img src="../static/images/me.jpg" alt="Me"/>
           <div className="intro-content">
             <h1> My name is Max Freundlich </h1>
+            <p> Stanford University, 2018 </p>
             <p> I like making things </p>
-            <div className="link-icons">
-              <a href="https://github.com/maxwfreu" className="octocat" target="_blank" rel="noopener noreferrer" />
-              <a href="mailto:maxwfreu@alumni.stanford.edu" className="email"/>
-            </div>
           </div>
         </div>
       </div>

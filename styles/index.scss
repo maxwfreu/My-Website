@@ -5,13 +5,8 @@
   'landing-page',
   'collections';
 
-@font-face {
-  font-family: RobotoMonoLight;
-  src: url(../static/Roboto_Mono/RobotoMono-Light.ttf);
-}
-
 html, body {
-  font-family: 'RobotoMonoLight' !important;
+  font-family: 'Hind Madurai', sans-serif;
   background-color: $offwhite;
 }
 
@@ -34,4 +29,8 @@ html, body {
   a {
     display: block
   }
+}
+
+.wrapper {
+  padding: 24px;
 }

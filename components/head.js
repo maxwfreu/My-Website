@@ -10,7 +10,7 @@ export default class Head extends Component {
   render() {
     return(
       <NextHead>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <title>{this.props.title || ''}</title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossOrigin="anonymous" />
         <meta name="description" content={this.props.description || defaultDescription} />
@@ -28,12 +28,16 @@ export default class Head extends Component {
         <meta property="og:image" content={this.props.ogImage || defaultOGImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-cave-dark.min.css" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Hind+Madurai:500"
+          lazyload="true"
+        />
       </NextHead>
     );
   }
 }
-
+        // <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atelier-cave-dark.min.css" />
 Head.propTypes = {
   title: string,
   description: string,

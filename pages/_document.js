@@ -12,10 +12,6 @@ export default class MyDocument extends Document {
             name="description"
             content="Native-like Page Transitions with React and NextJS, A Travel App"
           />
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display"
-          />
         </Head>
         <body>
           <Main />
