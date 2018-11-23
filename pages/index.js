@@ -40,8 +40,8 @@ export default class Home extends React.Component {
           </div>
         </div>
         <div className="link-icons">
-          <a href="https://github.com/maxwfreu" className="octocat" target="_blank" rel="noopener noreferrer" />
-          <a href="mailto:maxwfreu@alumni.stanford.edu" className="email"/>
+          <a href="https://github.com/maxwfreu" className="octocat" target="_blank" aria-label="Github" rel="noopener noreferrer" />
+          <a href="mailto:maxwfreu@alumni.stanford.edu" aria-label="Email" className="email"/>
         </div>
       </div>
     )
