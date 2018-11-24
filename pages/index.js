@@ -10,7 +10,7 @@ export default class Home extends React.Component {
         <PageHeader page={this.props.page} />
         <div className="intro-things">
           <div className="intro-content col-sm-12">
-            <h1> Some things I have done </h1>
+            <h1> Thing I have done </h1>
             <ul>
               <li>
                 <a href="https://www.scrumptioustab.com" target="_blank" rel="noopener noreferrer">Scrumptious</a>
@@ -35,6 +35,15 @@ export default class Home extends React.Component {
               <li>
                 <p>This website!</p>
                 <p> {`I built this site to familiarize myself with some of the tooling we used for Crypto Tax Report. This is my side-side project for when I am too exausted for my side projects.`}</p>
+              </li>
+            </ul>
+          </div>
+          <div className="intro-content col-sm-12">
+            <h1> Thing I have written </h1>
+            <ul>
+              <li>
+                <a href="https://medium.com/@mfreundlich1/building-a-website-with-next-js-netlify-2ca007c75933" target="_blank" rel="noopener noreferrer">Building a website with Next.js + Netlify</a>
+                <p>Here I outlined some the steps to create a static website with Next.js and Netlify. I've deployed a few websites using these two technologies and have found that they make development <b>easy</b> and <b>fun</b>. So, naturally, I wanted to share the love.</p>
               </li>
             </ul>
           </div>
