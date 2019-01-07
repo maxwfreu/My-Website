@@ -34,3 +34,49 @@ html, body {
 .wrapper {
   padding: 24px;
 }
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  visibility: hidden;
+
+  span {
+    padding: 4px;
+    border-radius: 25px;
+    font-size: 12px;
+    text-align: center;
+    min-width: 40px;
+    margin-right: 8px;
+    line-height: 15px;
+
+    &.red {
+      background-color: indianred;
+      color: white;
+    }
+
+    &.blue {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    &.black {
+      color: white;
+      background-color: #333;
+    }
+
+    &.yellow {
+      background-color: #FFE700;
+    }
+
+    &.pink {
+      background-color: pink;
+    }
+
+    &.lightblue {
+      background-color: lightblue;
+    }
+  }
+}
+.intro-content li:hover .logos {
+  visibility: visible;
+}
