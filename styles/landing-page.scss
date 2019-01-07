@@ -15,7 +15,7 @@
     }
 
   .intro-content {
-    padding-left: 50px;
+    // padding-left: 50px;
     width: 70%;
     justify-content: center;
     display: flex;
@@ -28,19 +28,21 @@
 }
 
 .intro-content {
+  padding-left: 0;
+
   a {
     font-size: 22px !important;
   }
 
-  ul {
-    padding: 0;
-  }
+  // ul {
+  //   padding: 0;
+  // }
 
   li {
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
     padding: 8px;
     border-radius: 5px;
-    display: block;
+    // display: block;
     margin-bottom: 16px;
     margin-bottom: 1rem;
   }

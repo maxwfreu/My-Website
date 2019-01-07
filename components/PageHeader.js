@@ -22,11 +22,10 @@ export default class PageHeader extends React.Component {
     return(
       <div className="intro-wrap">
         <div className="intro-row">
-          <img src="../static/images/me.jpg" alt="Me"/>
           <div className="intro-content">
-            <h1> My name is Max Freundlich </h1>
+            <h2> Max Freundlich </h2>
+            <p> Software Engineer </p>
             <p> Stanford University, 2017 </p>
-            <p> I like making things </p>
           </div>
         </div>
       </div>
