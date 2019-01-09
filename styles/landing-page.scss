@@ -32,6 +32,10 @@
 
   a {
     font-size: 22px !important;
+
+    &.small-link {
+      font-size: 16px !important;
+    }
   }
 
   // ul {

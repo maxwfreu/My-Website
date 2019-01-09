@@ -15,6 +15,7 @@ export default class Home extends React.Component {
               <li>
                 <a href="https://www.scrumptioustab.com" target="_blank" rel="noopener noreferrer">Scrumptious</a>
                 <p>Scrumptious is a chrome extension that turns your new tab into a kanban board.</p>
+                <p>Checkout the <a href="https://www.scrumptioustab.com/demo" target="_blank" rel="noopener noreferrer" className="small-link">demo</a> </p>
                 <div className="logos">
                   <span className="black">Next.js</span>
                   <span className="yellow">ECS</span>
