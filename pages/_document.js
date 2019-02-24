@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
             name="description"
             content="Native-like Page Transitions with React and NextJS, A Travel App"
           />
+          <meta name="google-site-verification" content="yb_-bhUcnoxh94uAQhPLDK-a1Gt7a9KHiZsGEHYXwqI" />
         </Head>
         <body>
           <Main />
