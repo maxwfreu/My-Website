@@ -33,6 +33,7 @@ export default class Head extends Component {
           href="https://fonts.googleapis.com/css?family=Hind+Madurai:500"
           lazyload="true"
         />
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet" />
       </NextHead>
     );
   }
