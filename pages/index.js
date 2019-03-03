@@ -42,7 +42,7 @@ export default class Home extends React.Component {
             <h2>Projects</h2>
             <div className="v2-project with-img">
               <div className="v2-project-description-img">
-                <img src="/static/images/scrumptious-screenshot.png" alt="Scrumptious Kanban Board"/>
+                <img src="https://cdn.scrumptioustab.com/assets/scrumptious-screenshot.png" alt="Scrumptious Kanban Board"/>
               </div>
               <div className="v2-project-description">
                 <h3> Scrumptious </h3>
@@ -72,7 +72,7 @@ export default class Home extends React.Component {
                 <a href="https://hackernewshiring.com" target="_blank" rel="noopener noreferrer">Check it out</a>
               </div>
               <div className="v2-project-description-img">
-                <img src="/static/images/hacker-news-hiring.png" alt="Hacker News Hiring" />
+                <img src="https://cdn.scrumptioustab.com/assets/hacker-news-hiring.png" alt="Hacker News Hiring" />
               </div>
             </div>
           </div>

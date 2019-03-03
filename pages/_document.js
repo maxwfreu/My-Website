@@ -18,6 +18,7 @@ export default class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet" />
           <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossOrigin="anonymous" />
           <meta name="google-site-verification" content="yb_-bhUcnoxh94uAQhPLDK-a1Gt7a9KHiZsGEHYXwqI" />
+          <title>Max Freundlich - Full Stack Developer</title>
         </Head>
         <body>
           <Main />
