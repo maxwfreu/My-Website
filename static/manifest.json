@@ -1,6 +1,28 @@
 {
   "short_name": "Max Freundlich",
   "name": "Max Freundlich",
+  "icons": [
+    {
+      "src": "/static/images/logo/48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/static/images/logo/96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/static/images/logo/192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/images/logo/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#121212",
