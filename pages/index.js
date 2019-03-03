@@ -12,11 +12,14 @@ export default class Home extends React.Component {
           <h2> Full Stack Developer </h2>
           <div className="v2-social">
             <a href="https://github.com/maxwfreu" target="_blank" aria-label="Github" rel="noopener noreferrer">
-            <img src="/static/images/github.png" />
+              <img src="/static/images/github.png" />
             </a>
             <a href="mailto:maxwfreu@alumni.stanford.edu" aria-label="Email" className="email">
               <img src="/static/images/email-card.png" />
             </a>
+          </div>
+          <div className="photo-cred">
+            Photo By <a href="https://www.rosalindphotography.com/" target="_blank" aria-label="Github" rel="noopener noreferrer">Rosalind Lutsky</a>
           </div>
         </div>
         <div className="v2-content">

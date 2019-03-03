@@ -25,7 +25,15 @@
   height: 100vh;
   justify-content: center;
   padding: 36px;
+  position: relative;
   width: 100%;
+}
+
+.photo-cred {
+  bottom: 8px;
+  font-size: 12px;
+  opacity: .7;
+  position: absolute;
 }
 
 .v2-social {
