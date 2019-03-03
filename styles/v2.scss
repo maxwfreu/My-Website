@@ -3,7 +3,7 @@
   background-image: url('../static/images/car-under-stars.png');
   background-position: center;
   background-size: cover;
-  color: #efefef;
+  color: #fff;
   font-family: 'Montserrat', sans-serif;
   height: 100%;
   width: 100%;
@@ -91,16 +91,21 @@
     width: 45%;
 
     .stack {
-      color: #ffdab9;
+      color: #6495ed;
     }
 
     a {
       background-color: #fff;
       border-radius: 5px;
-      box-shadow: 0 2px 7px 3px #4e4e4e;
+      box-shadow: 0 7px 14px -3px rgba(100, 149, 237, .3), 0 2px 4px 0 rgba(100, 149, 237, .4);
+      // box-shadow: 0 2px 7px 3px #4e4e4e;
       color: #000;
       padding: 8px 16px;
       text-decoration: none;
+
+      &:hover {
+        box-shadow: 0 7px 14px -3px rgba(100, 149, 237, .3), 0 2px 8px 3px rgba(100, 149, 237, .4);
+      }
     }
   }
 }
