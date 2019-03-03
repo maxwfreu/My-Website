@@ -33,7 +33,7 @@ export default class Home extends React.Component {
           </div>
           <div className="v2-section">
             <h2>Projects</h2>
-            <div className="v2-content-left">
+            <div className="v2-project">
               <div className="v2-project-description-img">
                 <img src="/static/images/scrumptious-screenshot.png" />
               </div>
@@ -51,6 +51,31 @@ export default class Home extends React.Component {
                 <br/>
                 <a href="https://www.scrumptioustab.com" target="_blank" rel="noopener noreferrer">Check it out</a>
               </div>
+            </div>
+
+            <div className="v2-project">
+              <div className="v2-project-description">
+                <h3> Hacker News Hiring </h3>
+                <h6 className="stack"> Stack: Next.js, Python </h6>
+                <br/>
+                <p>
+                  This is a website I built to visualize and query job listings in the monthly Who’s Hiring? posts on Hacker News. I built this as an excuse to work with rendering large lists with React
+                </p>
+                <br/>
+                <a href="https://hackernewshiring.com" target="_blank" rel="noopener noreferrer">Check it out</a>
+              </div>
+              <div className="v2-project-description-img">
+                <img src="/static/images/hacker-news-hiring.png" />
+              </div>
+            </div>
+          </div>
+          <div className="v2-section">
+            <h2>Articles</h2>
+            <div className="v2-articles">
+              <a href="https://medium.com/@mfreundlich1/building-a-website-with-next-js-netlify-2ca007c75933" target="_blank" rel="noopener noreferrer">Building a website with Next.js + Netlify</a>
+              <p>
+                After making a few webites with Next.js and Netlify, I put this article together to help out other people who ventured down this path.
+              </p>
             </div>
           </div>
         </div>
