@@ -1,0 +1,39 @@
+// Colors
+$blue: #0aa0d9;
+$gray: #2d3033;
+$offwhite: #f8faff;
+// Media Queries
+$xs: 580px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+
+// ------ MEDIA QUERY MIXINS ------
+
+// XS devices
+@mixin xsm {
+  @media (min-width: #{$xs}) {
+    @content;
+  }
+}
+
+// Small devices
+@mixin smm {
+  @media (min-width: #{$sm}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin mdm {
+  @media (min-width: #{$md}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin lgm {
+  @media (min-width: #{$lg}) {
+    @content;
+  }
+}

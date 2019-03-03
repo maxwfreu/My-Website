@@ -28,12 +28,6 @@ export default class Head extends Component {
         <meta property="og:image" content={this.props.ogImage || defaultOGImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Hind+Madurai:500"
-          lazyload="true"
-        />
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet" />
       </NextHead>
     );
   }

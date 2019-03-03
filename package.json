@@ -3,24 +3,23 @@
   "description": "A website about me, Max",
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "next -v && next build",
     "start": "next start",
     "export": "npm run build && next export"
   },
   "dependencies": {
-    "glob": "^7.1.2",
+    "@zeit/next-sass": "^1.0.1",
     "next": "^8.0.3",
+    "next-offline": "^3.3.6",
     "node-sass": "^4.11.0",
-    "normalize.css": "^8.0.0",
-    "path": "^0.12.7",
-    "postcss-easy-import": "^3.0.0",
-    "postcss-loader": "^2.0.7",
+    "normalize-scss": "^7.0.1",
     "prop-types": "^15.6.1",
     "raw-loader": "^0.5.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-highlight": "^0.12.0",
-    "react-transition-group": "^2.3.1",
     "sass-loader": "^6.0.6"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.0"
   }
 }

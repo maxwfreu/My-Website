@@ -1,6 +1,21 @@
+@import 'constants';
+@import 'sass/normalize';
+
+@include normalize;
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.flex-body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .v2-wrapper {
   background-color: #000;
-  background-image: url('../static/images/car-under-stars.png');
+  background-image: url('/static/images/car-under-stars.png');
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -81,13 +96,19 @@
 
 .v2-project {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 72px;
   margin-top: 72px;
   width: 100%;
 
+  &.with-img {
+    flex-direction: column-reverse;
+  }
+
   .v2-project-description-img {
-    width: 45%;
+    margin-top: 36px;
+    width: 100%;
 
     img {
       border-radius: 5px;
@@ -96,7 +117,7 @@
   }
 
   .v2-project-description {
-    width: 45%;
+    width: 100%;
 
     .stack {
       color: #6495ed;
@@ -124,5 +145,24 @@
     color: #fff;
     font-size: 20px;
     text-decoration: underline;
+  }
+}
+
+@include mdm {
+  .v2-project {
+    flex-direction: row;
+
+    &.with-img {
+      flex-direction: row;
+    }
+
+    .v2-project-description-img {
+      margin-top: 0;
+      width: 45%;
+    }
+
+    .v2-project-description {
+      width: 45%;
+    }
   }
 }
