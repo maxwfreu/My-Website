@@ -79,6 +79,10 @@ export default class Home extends React.Component {
           <div className="v2-section">
             <h2>Articles</h2>
             <div className="v2-articles">
+              <a href="https://medium.com/@mfreundlich1/syncing-localstorage-across-multiple-tabs-cb5d0b1feaab" target="_blank" rel="noopener noreferrer">Syncing LocalStorage across multiple tabs</a>
+              <p>
+                I thought this was a neat thing I learned while developing a chrome extension and thought I'd do a short write up on it.
+              </p>
               <a href="https://medium.com/@mfreundlich1/building-a-website-with-next-js-netlify-2ca007c75933" target="_blank" rel="noopener noreferrer">Building a website with Next.js + Netlify</a>
               <p>
                 After making a few webites with Next.js and Netlify, I put this article together to help out other people who ventured down this path.
