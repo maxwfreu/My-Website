@@ -62,6 +62,22 @@ export default class Home extends React.Component {
 
             <div className="v2-project">
               <div className="v2-project-description">
+                <h3> Terrarium + Rasperry Pi</h3>
+                <h6 className="stack"> Stack: Python, Cron, Dirt, Plants, Bugs </h6>
+                <br/>
+                <p>
+                  This is a bio-active Terrarium I built and put in my living room. I set up a raspberry pi that runs a cron job to snap a picture of the Terrarium every day at noon.
+                </p>
+                <br/>
+                <a href="https://maxfreundlich.com/terrarium" rel="noopener noreferrer">Check it out</a>
+              </div>
+              <div className="v2-project-description-img">
+                <img src="/static/images/time-lapse/bonus/front.jpg" alt="Terrarium" />
+              </div>
+            </div>
+
+            <div className="v2-project with-img">
+              <div className="v2-project-description">
                 <h3> Hacker News Hiring </h3>
                 <h6 className="stack"> Stack: Next.js, Python </h6>
                 <br/>
