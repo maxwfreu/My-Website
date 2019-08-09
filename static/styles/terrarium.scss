@@ -1,0 +1,30 @@
+.terrarium-wrapper {
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  padding: 30px 60px;
+
+  .terrarium {
+    max-width: 700px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .code-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .code {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+
+  .break {
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+}
