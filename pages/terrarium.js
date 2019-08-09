@@ -17,8 +17,13 @@ export default class Terrarium extends React.Component {
           <h3>Latest Image</h3> 
           <img src="/static/images/time-lapse/terrarium.jpeg" alt="terrarium"/>
           <h3> Monitoring the Terrarium</h3>
+          <div className="bonus-pics pi">
+            <img src="/static/images/time-lapse/bonus/front-pi.jpg" alt="front of rasperry pi"/>
+            <img src="/static/images/time-lapse/bonus/side-pi.jpg" alt="side of rasperry pi"/>
+            <img src="/static/images/time-lapse/bonus/back-pi.jpg" alt="back of rasperry pi"/>
+          </div>
           <p>
-            I setup a raspery pi with a Pi Camera 2 attached. I wrote a couple lines of code to take a picture of the terrarium every 12 hours, save the image within this repository, and then commit/push the image to github. 
+            I setup a raspery pi with a Pi Camera 2 attached. I wrote some code to take a picture of the terrarium, save the image within this repository, and then commit/push the image to github. I used cron to run the python script below every day at noon.
           </p>
           <div className="code-wrapper">
             <div className="code">
@@ -59,6 +64,10 @@ export default class Terrarium extends React.Component {
             Looking forward, I'll update this to send the image to an s3 bucket. I'm not a fan of cluttering the git history with 'Terrarium Upload' commits.
           </p>
           <h3>Building the Terrarium</h3>
+          <div className="bonus-pics">
+            <img src="/static/images/time-lapse/bonus/front.jpg" alt="front of terrarium"/>
+            <img src="/static/images/time-lapse/bonus/top.jpg" alt="top of terrarium"/>
+          </div>
           <p>
             Starting from the bottom there is a false bottom containing small rocks meant for an aquarium. On top of that is a filter I made out of some plastic sheet that I poked a bunch of holes into. Above that is layer of activated charcoal, and then the substrate layer
             <div className="break" />
