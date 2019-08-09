@@ -19,7 +19,7 @@ with picamera.PiCamera() as camera:
     )
     try:
         repo = Repo(PATH_OF_GIT_REPO)
-        repo.git.add(update=True)
+        repo.git.add(A=True)
         repo.index.commit(COMMIT_MSG)
         origin = repo.remote(name='origin')
         origin.push()
