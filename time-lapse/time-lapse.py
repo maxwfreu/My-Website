@@ -6,7 +6,7 @@ import os
 PATH_OF_GIT_REPO = '/home/pi/projects/My-Website/.git'
 COMMIT_MSG = 'Terrarium Image Upload'
 
-def takePicture:
+def takePicture():
   with picamera.PiCamera() as camera:
       camera.resolution = (1024, 768)
       camera.capture(
