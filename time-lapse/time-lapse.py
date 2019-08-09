@@ -6,24 +6,38 @@ import os
 PATH_OF_GIT_REPO = '/home/pi/projects/My-Website/.git'
 COMMIT_MSG = 'Terrarium Image Upload'
 
-def takePicture():
-  with picamera.PiCamera() as camera:
-      camera.resolution = (1024, 768)
-      camera.capture(
-          '../static/images/time-lapse/terrarium.jpeg',
-          format='jpeg',
-          quality=100,
-      )
+class TimeLapse:
+  def __init__(self):
+    self.repo = Repo(PATH_OF_GIT_REPO)
+    self.origin = repo.remote(name='origin')
 
-def push():
-  try:
-      repo = Repo(PATH_OF_GIT_REPO)
-      repo.git.add(A=True)
-      repo.index.commit(COMMIT_MSG)
-      origin = repo.remote(name='origin')
-      origin.push()
-  except:
-      print('Yikes.')
+  def takePicture():
+    with picamera.PiCamera() as camera:
+        camera.resolution = (1024, 768)
+        camera.capture(
+            '../static/images/time-lapse/terrarium.jpeg',
+            format='jpeg',
+            quality=100,
+        )
 
-takePicture()
-push()
+  def pull():
+    try:
+        self.origin.pull()
+    except:
+        print('Yikes.')
+
+  def push():
+    try:
+        self.repo.git.add(A=True)
+        self.repo.index.commit(COMMIT_MSG)
+        self.origin.push()
+    except:
+        print('Yikes.')
+
+  def run(self):
+    self.pull()
+    self.takePicture()
+    self.push()
+
+time_lapse = TimeLapse()
+time_lapse.run()
