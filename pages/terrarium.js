@@ -11,11 +11,12 @@ export default class Terrarium extends React.Component {
           <h1> Project: Terrarium </h1>
           <p>
             I setup a small terrarium in my living room and connected it to a rasperry pi. It features a moss garden with a neat rock I found.
-            <div className="break" />
+            <span className="break" />
             It houses to shade loving plants I found at lowes: Heuchera Americana and New Guinea impatiens.
           </p>
           <h3>Latest Image</h3> 
           <img src="/static/images/time-lapse/terrarium.jpeg" alt="terrarium"/>
+          <span className="image-update-text"> Last updated: 12:00PM, yesterday </span>
           <h3> Monitoring the Terrarium</h3>
           <div className="bonus-pics pi">
             <img src="/static/images/time-lapse/bonus/front-pi.jpg" alt="front of rasperry pi"/>
@@ -70,11 +71,11 @@ export default class Terrarium extends React.Component {
           </div>
           <p>
             Starting from the bottom there is a false bottom containing small rocks meant for an aquarium. On top of that is a filter I made out of some plastic sheet that I poked a bunch of holes into. Above that is layer of activated charcoal, and then the substrate layer
-            <div className="break" />
+            <span className="break" />
             From what I can tell, this is the most typical Terrarium setup. The thought here is that the water will make its way through the substrate, be filtered by the activated substrate, and settle in the rocks below. The rocks allow the water to evaporate to the top and the cycle continuous. The rock bottom is critical as having water sitting in the substrate can quickly ruin a terrarium.
-            <div className="break" />
+            <span className="break" />
             Next up, we have the plants. Lowes at a bunch of plants on sale and I went with two that I knew would do well in shade as I knew this terrarium wouldn't be getting a ton of sunlight. The plants are Heuchera Americana and New Guinea impatiens. I also put some moss in there to absorb some of the water and also because I just thought it looked nice. 
-            <div className="break" />
+            <span className="break" />
             Finally, we have the clean up crew. These are the spring tails and the isopods - my favorite part of the build! These little dudes crawl around and eat up any of the bacteria forming and kill off any mold growth.
           </p>
         </div>

@@ -26,8 +26,15 @@
   }
 
   .break {
+    display: flex;
     margin-bottom: 8px;
     margin-top: 8px;
+  }
+
+  .image-update-text {
+    color: grey;
+    display: flex;
+    margin-bottom: 8px;
   }
 
   .bonus-pics {
