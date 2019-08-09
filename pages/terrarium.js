@@ -76,7 +76,7 @@ export default class Terrarium extends React.Component {
             <span className="break" />
             Next up, we have the plants. Lowes at a bunch of plants on sale and I went with two that I knew would do well in shade as I knew this terrarium wouldn't be getting a ton of sunlight. The plants are Heuchera Americana and New Guinea impatiens. I also put some moss in there to absorb some of the water and also because I just thought it looked nice. 
             <span className="break" />
-            Finally, we have the clean up crew. These are the spring tails and the isopods - my favorite part of the build! These little dudes crawl around and eat up any of the bacteria forming and kill off any mold growth.
+            Finally, we have the clean up crew. These are the springtails and the isopods - my favorite part of the build! These little dudes crawl around and eat up any of the bacteria forming and kill off any mold growth.
           </p>
         </div>
       </div>
