@@ -39,16 +39,31 @@
 
   .bonus-pics {
     display: flex;
+    flex-flow: wrap;
     justify-content: space-evenly;
     margin-bottom: 8px;
     margin-top: 8px;
 
     img {
-      width: 300px;
+      width: 150px;
     }
 
     &.pi img {
-      width: 200px;
+      width: 150px;
+    }
+  }
+}
+
+@include smm {
+  .terrarium-wrapper {
+    .bonus-pics {
+      img {
+        width: 300px;
+      }
+
+      &.pi img {
+        width: 200px;
+      }
     }
   }
 }
