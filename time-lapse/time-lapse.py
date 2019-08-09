@@ -15,7 +15,7 @@ class TimeLapse:
     with picamera.PiCamera() as camera:
         camera.resolution = (1024, 768)
         camera.capture(
-            '../static/images/time-lapse/terrarium.jpeg',
+            '/home/pi/projects/My-Website/static/images/time-lapse/terrarium.jpeg',
             format='jpeg',
             quality=100,
         )
