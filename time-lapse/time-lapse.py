@@ -9,9 +9,9 @@ COMMIT_MSG = 'Terrarium Image Upload'
 class TimeLapse:
   def __init__(self):
     self.repo = Repo(PATH_OF_GIT_REPO)
-    self.origin = repo.remote(name='origin')
+    self.origin = self.repo.remote(name='origin')
 
-  def takePicture():
+  def takePicture(self):
     with picamera.PiCamera() as camera:
         camera.resolution = (1024, 768)
         camera.capture(
@@ -20,13 +20,13 @@ class TimeLapse:
             quality=100,
         )
 
-  def pull():
+  def pull(self):
     try:
         self.origin.pull()
     except:
         print('Yikes.')
 
-  def push():
+  def push(self):
     try:
         self.repo.git.add(A=True)
         self.repo.index.commit(COMMIT_MSG)
