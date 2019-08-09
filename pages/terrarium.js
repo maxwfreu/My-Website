@@ -12,7 +12,7 @@ export default class Terrarium extends React.Component {
           <p>
             I setup a small terrarium in my living room and connected it to a rasperry pi. It features a moss garden with a neat rock I found.
             <span className="break" />
-            It houses to shade loving plants I found at lowes: Heuchera Americana and New Guinea impatiens.
+            It houses two shade loving plants I found at lowes: Heuchera Americana and New Guinea impatiens.
           </p>
           <h3>Latest Image</h3> 
           <img src="/static/images/time-lapse/terrarium.jpeg" alt="terrarium"/>
