@@ -24,7 +24,7 @@ export default class Terrarium extends React.Component {
             <img src="/static/images/time-lapse/bonus/back-pi.jpg" alt="back of rasperry pi"/>
           </div>
           <p>
-            I setup a raspery pi with a Pi Camera 2 attached. I wrote some code to take a picture of the terrarium, save the image within this repository, and then commit/push the image to github. I used cron to run the python script below every day at noon.
+            I setup a raspery pi with a Pi Camera 2 attached. I wrote some code to take a picture of the terrarium, save the image within this repository, and then commit/push the image to github. I used cron to automatically run the python script below every day at noon.
           </p>
           <div className="code-wrapper">
             <div className="code">
