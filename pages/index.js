@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link'
 import DescriptiveSection from '../components/DescriptiveSection';
 import Projects from '../components/Projects';
 import '../static/styles/index.scss';

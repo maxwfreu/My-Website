@@ -53,6 +53,20 @@ const Projects = () => (
         This is a bio-active Terrarium I built and put in my living room. I set up a raspberry pi that runs a cron job to snap a picture of the Terrarium every day at noon.
       </p>
     </ProjectItem>
+    <ProjectItem
+      title="This Website"
+      description="The website you are currently on"
+      url="https://github.com/maxwfreu/My-Website"
+      stack={[
+        'nextjs',
+        'netlify',
+        'scss',
+      ]}
+    >
+      <p>
+        This is a small static website I use as a place to link to projects that I work on or articles that I publish.
+      </p>
+    </ProjectItem>
   </dl>
 );
 
