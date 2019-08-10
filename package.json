@@ -9,17 +9,16 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
-    "next": "^8.0.3",
-    "next-offline": "^3.3.6",
-    "node-sass": "^4.11.0",
-    "normalize-scss": "^7.0.1",
+    "copy-webpack-plugin": "^5.0.4",
+    "next": "^9.0.3",
+    "next-offline": "^4.0.3",
+    "node-sass": "^4.12.0",
     "prop-types": "^15.6.1",
-    "raw-loader": "^0.5.1",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
-    "sass-loader": "^6.0.6"
+    "raw-loader": "^3.1.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "sass-loader": "^7.2.0",
+    "typeface-raleway": "0.0.75"
   },
-  "devDependencies": {
-    "copy-webpack-plugin": "^5.0.0"
-  }
+  "devDependencies": {}
 }

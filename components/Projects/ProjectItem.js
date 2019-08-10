@@ -1,0 +1,38 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'next/link'
+
+const ProjectItem = props => (
+  <React.Fragment>
+    <dt>
+      {props.prefetch ? (
+        <a href={props.url}>{props.title}</a>
+      ) : (
+        <Link href={props.url}><a>{props.title}</a></Link>
+      )}
+    </dt>
+    <dd>
+      <p>{props.description}</p>
+      {props.children}
+      <div className="stack">
+        {props.stack.map((item) => (
+          <span>{item}</span>
+        ))}
+      </div>
+    </dd>
+  </React.Fragment>
+);
+
+ProjectItem.defaultProps = {
+  prefetch: false,
+}
+
+ProjectItem.propTypes = {
+  description: PropTypes.string.isRequired,
+  prefetch: PropTypes.bool,
+  stack: PropTypes.arrayOf(PropTypes.string).isRequired,
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+}
+
+export default ProjectItem;
