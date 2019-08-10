@@ -16,7 +16,7 @@ const ProjectItem = props => (
       {props.children}
       <div className="stack">
         {props.stack.map((item) => (
-          <span>{item}</span>
+          <span key={`${props.title}${item}`}>{item}</span>
         ))}
       </div>
     </dd>

@@ -8,17 +8,17 @@
       "sizes": "48x48"
     },
     {
-      "src": "/static/images/logo/96x96.png",
+      "src": "/static/images/logo/96.png",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "/static/images/logo/192x192.png",
+      "src": "/static/images/logo/192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/static/images/logo/512x512.png",
+      "src": "/static/images/logo/512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

@@ -14,8 +14,7 @@ export default class MyDocument extends Document {
           />
           <meta name="theme-color" content="#121212" />
           <link rel="manifest" href="/static/manifest.json" />
-          <link rel="Site Icon" href="/static/images/logo/16.png" />
-          <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text&display=swap" rel="stylesheet" />
+          <link rel="Site Icon" href="/static/images/logo/16.ico" />
           <meta name="google-site-verification" content="yb_-bhUcnoxh94uAQhPLDK-a1Gt7a9KHiZsGEHYXwqI" />
         </Head>
         <body>

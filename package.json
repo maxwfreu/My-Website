@@ -8,16 +8,19 @@
     "export": "npm run build && next export"
   },
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
     "copy-webpack-plugin": "^5.0.4",
     "next": "^9.0.3",
     "next-offline": "^4.0.3",
     "node-sass": "^4.12.0",
     "prop-types": "^15.6.1",
-    "raw-loader": "^3.1.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "sass-loader": "^7.2.0"
+    "sass-loader": "^7.2.0",
+    "typeface-nanum-gothic": "0.0.63"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "url-loader": "^2.1.0"
+  }
 }
