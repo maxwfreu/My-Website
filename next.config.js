@@ -3,7 +3,7 @@ const withSass = require('@zeit/next-sass')
 const withCSS = require('@zeit/next-css')
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-module.exports = withOffline(withCSS(withSass({
+module.exports = withOffline(withSass({
   webpack: (config) => {
     const conf = config;
     conf.plugins.push(
@@ -24,4 +24,4 @@ module.exports = withOffline(withCSS(withSass({
     });
     return conf;
   },
-})));
+}));
