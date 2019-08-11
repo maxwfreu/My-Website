@@ -47,11 +47,12 @@
     margin-top: 8px;
 
     img {
-      max-height: 300px;
+      max-height: 200px;
       width: 150px;
     }
 
     &.pi img {
+      max-height: 200px;
       width: 150px;
     }
   }
@@ -64,10 +65,12 @@
     .bonus-pics {
 
       img {
+        max-height: 400px;
         width: 300px;
       }
 
       &.pi img {
+        max-height: 300px;
         width: 200px;
       }
     }
