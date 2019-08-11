@@ -3,6 +3,7 @@ import Link from 'next/link'
 import PropTypes from 'prop-types';
 import '../static/styles/index.scss';
 
+// TODO: Refactor this into smaller, more manageable components.
 export default class Terrarium extends React.Component {
   render() {
     return(
@@ -15,7 +16,7 @@ export default class Terrarium extends React.Component {
             It houses two shade loving plants I found at lowes: Heuchera Americana and New Guinea impatiens.
           </p>
           <h3>Latest Image</h3> 
-          <img src="/static/images/time-lapse/terrarium.jpeg" alt="terrarium"/>
+          <img src={`/static/images/time-lapse/terrarium.jpeg?v=${(new Date()).getTime()}`} alt="terrarium"/>
           <span className="image-update-text"> Last updated: 12:00PM, yesterday </span>
           <h3> Monitoring the Terrarium</h3>
           <div className="bonus-pics pi">
