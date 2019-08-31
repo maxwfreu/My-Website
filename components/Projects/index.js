@@ -37,7 +37,7 @@ const Projects = () => (
     </ProjectItem>
     <ProjectItem
       title="create-npm-react-package"
-      description="Easily create react packages to be distrubuted via NPM."
+      description="Easily create react packages to be distributed via NPM."
       url="https://www.npmjs.com/package/create-npm-react-package"
       stack={[
         'node',
