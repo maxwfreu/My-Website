@@ -1,6 +1,7 @@
 import React from 'react';
 import DescriptiveSection from '../components/DescriptiveSection';
 import Projects from '../components/Projects';
+import ContactForm from '../components/ContactForm';
 import '../static/styles/index.scss';
 
 const Home = () => (
@@ -28,17 +29,16 @@ const Home = () => (
         <dd>
           After making a few webites with Next.js and Netlify, I put this article together to help out other people who ventured down this path.
         </dd>
+        <dt>
+          <a href="https://medium.com/@mfreundlich1/publishing-a-react-package-to-npm-4885dcbd02ac" target="_blank" rel="noopener noreferrer">Publishing a React Package to NPM</a>
+        </dt>
+        <dd>
+          After publishing create-npm-react-package to npm, I wrote this article to show people how easy this cli tool makes publishing react components to npm.
+        </dd>
       </dl>
     </DescriptiveSection>
     <DescriptiveSection title="Get In Touch" identifier="contact">
-      <dl>
-        <dt>Email</dt>
-        <dd>
-          <a href="mailto:maxwfreu@alumni.stanford.edu" aria-label="Email">
-            maxwfreu@alumni.stanford.edu
-          </a>
-        </dd>
-      </dl>
+      <ContactForm />
     </DescriptiveSection>
   </div>
 );
