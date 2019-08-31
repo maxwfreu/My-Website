@@ -36,7 +36,7 @@ export default class ContactForm extends React.PureComponent {
         method="POST"
         data-netlify-honeypot="gotcha"
         data-netlify="true"
-        action="/?success=1"
+        action="/?success=1#contact"
       >
         <input type="hidden" name="form-name" value="contact" />
         <div className="gotcha">
