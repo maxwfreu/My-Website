@@ -1,3 +1,0 @@
-[build]
-  AWS_LAMBDA_JS_RUNTIME = "node10.16.2"
-  functions = "functions"

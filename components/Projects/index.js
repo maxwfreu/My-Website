@@ -36,6 +36,21 @@ const Projects = () => (
       </p>
     </ProjectItem>
     <ProjectItem
+      title="create-npm-react-package"
+      description="Easily create react packages to be distrubuted via NPM."
+      url="https://www.npmjs.com/package/create-npm-react-package"
+      stack={[
+        'node',
+        'webpack',
+        'npm',
+      ]}
+      prefetch
+    >
+      <p>
+        This package will set you up with a simple starter for your new react component package.
+      </p>
+    </ProjectItem>
+    <ProjectItem
       title="Terrarium-Pi"
       description="A terrarium monitored by a raspberry pi"
       url="/terrarium"
