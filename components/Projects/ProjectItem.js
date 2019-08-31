@@ -16,8 +16,8 @@ const ProjectItem = props => (
       {props.children}
       <div className="stack">
         {props.stack.map((item, index) => (
-          <React.Fragment>
-            <div key={`${props.title}${item}`} className={item}>{item}</div>
+          <React.Fragment key={`${props.title}${item}`}>
+            <div className={item}>{item}</div>
             {index !== props.stack.length - 1 && (
               <span>&#183;</span>
             )}

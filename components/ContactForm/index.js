@@ -34,10 +34,11 @@ export default class ContactForm extends React.PureComponent {
         className="contact-form"
         name="contact"
         method="POST"
-        netlify-honeypot="gotcha"
+        data-netlify-honeypot="gotcha"
         data-netlify="true"
         action="/?success=1"
       >
+        <input type="hidden" name="form-name" value="contact" />
         <div className="gotcha">
           <label>Don’t fill this out if you're human: <input name="gotcha" /></label>
         </div>
