@@ -1,5 +1,4 @@
-import { useMemo } from "react";
-import { motion, useCycle } from "framer-motion";
+import { motion } from "framer-motion";
 
 const AnimatedLine = ({ transitionProperties, width }) => {
   return (
@@ -73,7 +72,8 @@ const createLines = () => [
 ];
 
 const AnimatedLines = () => {
-  const arr = useMemo(() => createLines());
+  const arr = createLines();
+
   return (
     <div className="absolute h-full w-full z-0">
       {arr.map(({ id, ...rest }) => (
