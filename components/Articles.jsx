@@ -15,6 +15,7 @@ const ARTICLES = [
     name: "Publishing a React Package to NPM",
     date: "2019",
     dateTime: "2019-04-31",
+    href: "https://medium.com/@mfreundlich1/publishing-a-react-package-to-npm-4885dcbd02ac",
   },
 ];
 const Articles = () => (
@@ -25,7 +26,7 @@ const Articles = () => (
         key={article.name}
       >
         <a href={article.href} target="_blank">
-          <h4 className="underline">{article.name}</h4>
+          <h3 className="underline">{article.name}</h3>
         </a>
         <span>
           <time dateTime={article.dateTime}>{article.date}</time>

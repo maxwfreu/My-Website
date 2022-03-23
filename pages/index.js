@@ -43,7 +43,7 @@ export default function Home() {
             <div className="flex flex-col">
               <a
                 href="mailto:mfreundlich1@gmail.com"
-                className="hover:underline flex items-center"
+                className="hover:underline flex items-center min-h-[48px]"
               >
                 <div className="w-6 md:w-12">
                   <MailIcon className="w-6 md:w-12" />
@@ -52,7 +52,7 @@ export default function Home() {
               </a>
               <a
                 href="https://github.com/maxwfreu"
-                className="hover:underline flex items-center"
+                className="hover:underline flex items-center min-h-[48px]"
               >
                 <div className="w-6 md:w-12">
                   <CodeIcon className="w-6 md:w-12" />
@@ -80,6 +80,7 @@ export default function Home() {
         <AnimatedSectionContent className="mb-8 sm:pb-16 my-10 lg:my-40">
           <div className="w-100 h-76 hidden lg:block">
             <Image
+              alt="A screenshot of the Auger Metrics website"
               src="/static/images/auger.png"
               height={300}
               width={500}
@@ -123,6 +124,7 @@ export default function Home() {
           </div>
           <div className="w-100 h-76 block lg:hidden">
             <Image
+              alt="A screenshot of the Auger Metrics website"
               src="/static/images/auger.png"
               height={300}
               width={500}
@@ -163,7 +165,7 @@ export default function Home() {
               didn't an internet connection. At it's prime, Scrumptious had over
               1000 daily active users. Eventually I opted to make it{" "}
               <a
-                src="https://github.com/maxwfreu/scrumptioustab"
+                href="https://github.com/maxwfreu/scrumptioustab"
                 className="underline"
               >
                 open source
@@ -173,6 +175,7 @@ export default function Home() {
           </div>
           <div className="w-100 h-76">
             <Image
+              alt="A screenshot of the Scrumpitous Tab website"
               src="/static/images/scrumptious.png"
               height={300}
               width={500}
