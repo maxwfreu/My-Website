@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const AnimatedLine = ({ transitionProperties, width }) => {
   return (
@@ -72,11 +73,14 @@ const createLines = () => [
 ];
 
 const AnimatedLines = () => {
-  const arr = createLines();
+  const [lines, setLines] = useState([]);
+  useEffect(() => {
+    setLines(createLines());
+  }, []);
 
   return (
     <div className="absolute h-full w-full z-0">
-      {arr.map(({ id, ...rest }) => (
+      {lines.map(({ id, ...rest }) => (
         <AnimatedLine key={id} {...rest} />
       ))}
     </div>
