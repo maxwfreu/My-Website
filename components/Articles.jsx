@@ -20,9 +20,12 @@ const ARTICLES = [
 const Articles = () => (
   <ul>
     {ARTICLES.map((article) => (
-      <li className="flex justify-between my-4" key={article.name}>
+      <li
+        className="flex justify-between my-4 text-xs md:text-lg"
+        key={article.name}
+      >
         <a href={article.href} target="_blank">
-          <h4 className="underline text-lg">{article.name}</h4>
+          <h4 className="underline">{article.name}</h4>
         </a>
         <span>
           <time dateTime={article.dateTime}>{article.date}</time>

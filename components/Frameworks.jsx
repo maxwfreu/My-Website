@@ -1,5 +1,5 @@
 const FrameWorks = ({ frameworks }) => (
-  <div className="flex">
+  <div className="flex flex-wrap">
     {frameworks.map((item) => (
       <div
         key={item.name}

@@ -15,7 +15,7 @@ import AnimatedLines from "../components/AnimatedLines";
 
 export default function Home() {
   return (
-    <div className="bg-neutral-800 font-montserrat text-white">
+    <div className="bg-neutral-800 font-montserrat text-white px-4">
       <Head>
         <title>Max Freundlich</title>
         <meta name="description" content="Max Freundlich" />
@@ -23,14 +23,14 @@ export default function Home() {
       </Head>
 
       <main id="top">
-        <div className="h-screen flex justify-center items-center relative overflow-hidden">
+        <div className="h-screen flex justify-center items-center relative overflow-hidden pb-8">
           <SectionContent className="z-10">
             <div>
-              <h1 className="text-6xl">
+              <h1 className="text-3xl md:text-6xl">
                 Hi, I'm <span className="text-blue-500">Max</span>
               </h1>
-              <p className="text-xl mt-4">Full Stack Developer</p>
-              <div className="mt-8">
+              <p className="md:text-xl mt-4">Full Stack Developer</p>
+              <div className="text-sm md:text-base mt-8">
                 <p>
                   I'm a software developer based right outside of Philadelphia,
                   PA. I like building simple, fast, responsive websites.
@@ -42,18 +42,25 @@ export default function Home() {
                 href="mailto:mfreundlich1@gmail.com"
                 className="hover:underline flex items-center"
               >
-                <MailIcon height={32} /> <span className="ml-4">Email me</span>
+                <div className="w-6 md:w-12">
+                  <MailIcon className="w-6 md:w-12" />
+                </div>
+                <span className="text-sm md:text-base ml-4">Email me</span>
               </a>
               <a
-                href="github.com/maxwfreu"
+                href="https://github.com/maxwfreu"
                 className="hover:underline flex items-center"
               >
-                <CodeIcon height={32} />{" "}
-                <span className="ml-4">Follow me on Github</span>
+                <div className="w-6 md:w-12">
+                  <CodeIcon className="w-6 md:w-12" />
+                </div>
+                <span className=" text-sm md:text-base ml-4">
+                  Follow me on Github
+                </span>
               </a>
             </div>
           </SectionContent>
-          <div className="absolute bottom-3 left-1/2 z-10">
+          <div className="bottom-3 left-1/2 z-10 hidden sm:block absolute">
             <a href="#projects">
               <ArrowDownIcon height={32} />
             </a>
@@ -62,12 +69,12 @@ export default function Home() {
         </div>
       </main>
       <section>
-        <SectionContent className="pb-16">
-          <h2 className="text-5xl" id="projects">
+        <SectionContent className="mb-8 sm:pb-16">
+          <h2 className="text-xl md:text-6xl" id="projects">
             Projects
           </h2>
         </SectionContent>
-        <AnimatedSectionContent className="pb-16 my-10 lg:my-40">
+        <AnimatedSectionContent className="mb-8 sm:pb-16 my-10 lg:my-40">
           <div className="w-100 h-76 hidden lg:block">
             <Image
               src="/static/images/auger.png"
@@ -82,7 +89,7 @@ export default function Home() {
               whileInView={{ x: 0 }}
               viewport={{ once: true }}
               transition={{ ease: "easeIn", duration: 0.5 }}
-              className="text-5xl"
+              className="text-xl md:text-6xl"
             >
               <a
                 className="text-blue-500 underline"
@@ -101,7 +108,7 @@ export default function Home() {
                 { name: "Stripe", color: "bg-indigo-500" },
               ]}
             />
-            <p className="mt-2">
+            <p className="text-sm md:text-base mt-2">
               Auger is an ongoing side project of mine. My goal is to build a
               platform that can seemlessly integrate with an existing CI/CD
               pipeline and report build time statistics overtime. Auger will
@@ -120,14 +127,14 @@ export default function Home() {
             />
           </div>
         </AnimatedSectionContent>
-        <AnimatedSectionContent className="pb-16 lg:pb-40 mt-10 lg:mt-40">
+        <AnimatedSectionContent className="pb-16 lg:pb-40 mt-4 sm:mt-10 lg:mt-40">
           <div>
             <motion.h2
               initial={{ x: -100 }}
               whileInView={{ x: 0 }}
               viewport={{ once: true }}
               transition={{ ease: "easeIn", duration: 0.5 }}
-              className="text-5xl"
+              className="text-xl md:text-6xl"
             >
               <a
                 className="text-blue-500 underline"
@@ -145,7 +152,7 @@ export default function Home() {
               ]}
             />
 
-            <p className="mt-2">
+            <p className="text-sm md:text-base mt-2">
               Scrumptious Tab was a chrome extension that converts your new tab
               into a kanban board. As someone who is hyper-focused on
               productively I wanted to optimize workflow anyway I could. I
@@ -171,9 +178,9 @@ export default function Home() {
           </div>
         </AnimatedSectionContent>
       </section>
-      <section className="relative pb-1y">
-        <SectionContent className="pb-16">
-          <h2 className="text-5xl" id="projects">
+      <section className="relative pb-8 sm:pb-16">
+        <SectionContent className="pb-8 sm:pb-16">
+          <h2 className="text-xl md:text-6xl" id="projects">
             Articles
           </h2>
         </SectionContent>
@@ -181,7 +188,7 @@ export default function Home() {
         <SectionContent className="pb-32 ">
           <Articles />
         </SectionContent>
-        <div className="absolute bottom-8 left-1/2">
+        <div className="hidden sm:block absolute bottom-8 left-1/2">
           <a href="#top">
             <ArrowUpIcon height={32} />
           </a>
