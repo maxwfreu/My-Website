@@ -18,7 +18,10 @@ export default function Home() {
     <div className="bg-neutral-800 font-montserrat text-white overflow-hidden">
       <Head>
         <title>Max Freundlich</title>
-        <meta name="description" content="Max Freundlich" />
+        <meta
+          name="description"
+          content="Max Freundlich. Fullstack Developer."
+        />
         <link rel="icon" href="/static/images/icon/16.ico" />
       </Head>
 
