@@ -15,7 +15,7 @@ import AnimatedLines from "../components/AnimatedLines";
 
 export default function Home() {
   return (
-    <div className="bg-neutral-800 font-montserrat text-white px-4">
+    <div className="bg-neutral-800 font-montserrat text-white overflow-hidden">
       <Head>
         <title>Max Freundlich</title>
         <meta name="description" content="Max Freundlich" />
@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
 
       <main id="top">
-        <div className="h-screen flex justify-center items-center relative overflow-hidden pb-8">
+        <div className="h-screen flex justify-center items-center relative overflow-hidden px-4 pb-8">
           <SectionContent className="z-10">
             <div>
               <h1 className="text-3xl md:text-6xl">
@@ -68,7 +68,7 @@ export default function Home() {
           <AnimatedLines />
         </div>
       </main>
-      <section>
+      <section className="px-4">
         <SectionContent className="mb-8 sm:pb-16">
           <h2 className="text-xl md:text-6xl" id="projects">
             Projects
@@ -178,7 +178,7 @@ export default function Home() {
           </div>
         </AnimatedSectionContent>
       </section>
-      <section className="relative pb-8 sm:pb-16">
+      <section className="relative px-4 pb-8 sm:pb-16">
         <SectionContent className="pb-8 sm:pb-16">
           <h2 className="text-xl md:text-6xl" id="projects">
             Articles
