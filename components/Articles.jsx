@@ -1,5 +1,11 @@
 const ARTICLES = [
   {
+    name: "You should probably be paying closer attention to your CI build times",
+    date: "2022",
+    dateTime: "2022-04-03",
+    href: "https://medium.com/@mfreundlich1/you-should-probably-be-paying-closer-attention-to-your-ci-build-times-64f9345ab441",
+  },
+  {
     name: "Syncing LocalStorage across multiple tabs",
     date: "2019",
     dateTime: "2019-04-21",
