@@ -1,5 +1,11 @@
 const ARTICLES = [
   {
+    name: "Speed up your Jest tests with shards",
+    date: "2022",
+    dateTime: "2022-04-04",
+    href: "https://medium.com/@mfreundlich1/speed-up-your-jest-tests-with-shards-776e9f02f637",
+  },
+  {
     name: "You should probably be paying closer attention to your CI build times",
     date: "2022",
     dateTime: "2022-04-03",
