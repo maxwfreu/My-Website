@@ -14,8 +14,8 @@ const PROJECTS = [
   },
   {
     name: "Scrumptious",
-    date: "2022",
-    dateTime: "2022-04-03",
+    date: "2019",
+    dateTime: "2019-07-03",
     href: "https://www.scrumptioustab.com/",
     description: `Scrumptious Tab was a chrome extension that converts your new tab
     into a kanban board. As someone who is hyper-focused on
