@@ -12,6 +12,8 @@ import Articles from "../components/Articles";
 import FrameWorks from "../components/Frameworks";
 import AnimatedSectionContent from "../components/AnimatedSectionContent";
 import AnimatedLines from "../components/AnimatedLines";
+import ProjectCard from "../components/Projects";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -26,11 +28,11 @@ export default function Home() {
       </Head>
 
       <main id="top">
-        <div className="h-screen flex justify-center items-center relative overflow-hidden px-4 pb-8">
+        <div className="h-screen flex justify-center items-center overflow-hidden px-4 pb-8">
           <SectionContent className="z-10">
             <div>
               <h1 className="text-3xl md:text-6xl">
-                Hi, I'm <span className="text-blue-500">Max</span>
+                Hi, I'm <span className="text-blue-400">Max</span>
               </h1>
               <p className="md:text-xl mt-4">Full Stack Developer</p>
               <div className="text-sm md:text-base mt-8">
@@ -63,141 +65,34 @@ export default function Home() {
               </a>
             </div>
           </SectionContent>
-          <div className="bottom-3 left-1/2 z-10 hidden sm:block absolute">
-            <a href="#projects">
-              <ArrowDownIcon height={32} />
-            </a>
-          </div>
-          <AnimatedLines />
         </div>
       </main>
-      <section className="px-4">
-        <SectionContent className="mb-8 sm:pb-16">
-          <h2 className="text-xl md:text-6xl" id="projects">
-            Projects
-          </h2>
+      <section className="relative px-4 pb-8 sm:pb-16">
+        <SectionContent className="pb-8 sm:pb-16">
+          <div>
+            <h2 className="text-xl md:text-6xl pb-4" id="projects">
+              Projects
+            </h2>
+            <div className="h-1 w-full rounded-md bg-gradient-to-r  from-fuchsia-400 to-blue-300" />
+          </div>
         </SectionContent>
-        <AnimatedSectionContent className="mb-8 sm:pb-16 my-10 lg:my-40">
-          <div className="w-100 h-76 hidden lg:block">
-            <Image
-              alt="A screenshot of the Auger Metrics website"
-              src="/static/images/auger.png"
-              height={300}
-              width={500}
-              className="rounded-md shadow"
-            />
-          </div>
-          <div>
-            <motion.h2
-              initial={{ x: 100 }}
-              whileInView={{ x: 0 }}
-              viewport={{ once: true }}
-              transition={{ ease: "easeIn", duration: 0.5 }}
-              className="text-xl md:text-6xl"
-            >
-              <a
-                className="text-blue-500 underline"
-                href="https://augermetrics.com"
-              >
-                Auger
-              </a>{" "}
-              Metrics
-            </motion.h2>
-            <FrameWorks
-              frameworks={[
-                { name: "Next.js", color: "bg-rose-500" },
-                { name: "Tailwind", color: "bg-teal-500" },
-                { name: "React", color: "bg-yellow-500" },
-                { name: "Postgres", color: "bg-blue-500" },
-                { name: "Stripe", color: "bg-indigo-500" },
-              ]}
-            />
-            <p className="text-sm md:text-base mt-2">
-              Auger is an ongoing side project of mine. My goal is to build a
-              platform that can seemlessly integrate with an existing CI/CD
-              pipeline and report build time statistics overtime. Auger will
-              notify developers via comment on a PR when a test suites execution
-              time has exceeded the average duration. This way developers can
-              quickly catch long running tests and actively reduce CI execution
-              time rather waiting for build times to grow out of control.
-            </p>
-          </div>
-          <div className="w-100 h-76 block lg:hidden">
-            <Image
-              alt="A screenshot of the Auger Metrics website"
-              src="/static/images/auger.png"
-              height={300}
-              width={500}
-              className="rounded-md shadow"
-            />
-          </div>
-        </AnimatedSectionContent>
-        <AnimatedSectionContent className="pb-16 lg:pb-40 mt-4 sm:mt-10 lg:mt-40">
-          <div>
-            <motion.h2
-              initial={{ x: -100 }}
-              whileInView={{ x: 0 }}
-              viewport={{ once: true }}
-              transition={{ ease: "easeIn", duration: 0.5 }}
-              className="text-xl md:text-6xl"
-            >
-              <a
-                className="text-blue-500 underline"
-                href="https://www.scrumptioustab.com/"
-              >
-                Scrumptious
-              </a>{" "}
-              Tab
-            </motion.h2>
-            <FrameWorks
-              frameworks={[
-                { name: "Netlify", color: "bg-rose-500" },
-                { name: "Styled JSX", color: "bg-teal-500" },
-                { name: "React", color: "bg-indigo-500" },
-              ]}
-            />
 
-            <p className="text-sm md:text-base mt-2">
-              Scrumptious Tab was a chrome extension that converts your new tab
-              into a kanban board. As someone who is hyper-focused on
-              productively I wanted to optimize workflow anyway I could. I
-              wanted a feature rich kanban board that loaded instantly and
-              didn't an internet connection. At it's prime, Scrumptious had over
-              1000 daily active users. Eventually I opted to make it{" "}
-              <a
-                href="https://github.com/maxwfreu/scrumptioustab"
-                className="underline"
-              >
-                open source
-              </a>
-              .
-            </p>
-          </div>
-          <div className="w-100 h-76">
-            <Image
-              alt="A screenshot of the Scrumpitous Tab website"
-              src="/static/images/scrumptious.png"
-              height={300}
-              width={500}
-              className="rounded-md shadow"
-            />
-          </div>
-        </AnimatedSectionContent>
+        <div className="max-w-md mx-auto space-y-4 lg:max-w-5xl pb-32 ">
+          <Projects />
+        </div>
       </section>
       <section className="relative px-4 pb-8 sm:pb-16">
         <SectionContent className="pb-8 sm:pb-16">
-          <h2 className="text-xl md:text-6xl" id="projects">
-            Articles
-          </h2>
+          <div>
+            <h2 className="text-xl md:text-6xl pb-4" id="projects">
+              Articles
+            </h2>
+            <div className="h-1 w-full rounded-md bg-gradient-to-r  from-fuchsia-400 to-blue-300" />
+          </div>
         </SectionContent>
 
-        <SectionContent className="pb-32 ">
+        <div className="max-w-md mx-auto space-y-4 lg:max-w-5xl pb-32 ">
           <Articles />
-        </SectionContent>
-        <div className="hidden sm:block absolute bottom-8 left-1/2">
-          <a href="#top">
-            <ArrowUpIcon height={32} />
-          </a>
         </div>
       </section>
     </div>

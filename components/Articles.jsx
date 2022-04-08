@@ -34,10 +34,10 @@ const Articles = () => (
   <ul>
     {ARTICLES.map((article) => (
       <li
-        className="flex justify-between my-4 text-xs md:text-lg"
+        className="flex justify-between my-4 text-sm md:text-lg"
         key={article.name}
       >
-        <a href={article.href} target="_blank">
+        <a className="text-blue-300" href={article.href} target="_blank">
           <h3 className="underline">{article.name}</h3>
         </a>
         <span>
