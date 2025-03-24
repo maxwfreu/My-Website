@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="bg-blackfont-montserrat text-white overflow-hidden">
+    <div className="bg-blackfont-montserrat text-black dark:text-white overflow-hidden">
       <main className="h-screen flex justify-center items-center overflow-hidden px-4">
         <div className="flex flex-col gap-4">
           <h1 className="text-3xl md:text-6xl">
