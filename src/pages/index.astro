@@ -1,0 +1,10 @@
+---
+import BlogPosts from "../components/BlogPosts.astro";
+import Welcome from "../components/Welcome.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <Welcome />
+  <BlogPosts limit={10} title="Recent Posts" />
+</Layout>

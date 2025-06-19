@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import Link from "./Link.astro";
+import dayjs from "dayjs";
+
+const { limit, title } = Astro.props;
+const allBlogPosts = (await getCollection("blog"))
+  .sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+  )
+  .slice(0, limit);
+---
+
+<section class="flex flex-col items-start justify-center mt-12">
+  <div class="flex flex-col gap-6">
+    <div>
+      <h2 class="text-xl">{title || "All Blog Posts"}</h2>
+      <p class="text-gray-500">I'm trying to write gooder and morer.</p>
+    </div>
+    <div class="flex flex-col gap-2">
+      {
+        allBlogPosts.map((blog) => (
+          <div>
+            <div class="inline-flex gap-2">
+              <span class="text-gray-500 italic">
+                {dayjs(blog.data.date).format("MMM DD, YYYY")}
+              </span>
+              <Link href={`/blog/${blog.id}`}>{blog.data.title}</Link>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

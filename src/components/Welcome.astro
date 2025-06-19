@@ -1,0 +1,53 @@
+---
+import linkedin from "../assets/LinkedIn_icon.svg";
+import github from "../assets/github-mark.svg";
+import mailIcon from "../assets/mail-icon.svg";
+import meOriginal from "../assets/me-original.jpg";
+---
+
+<main class="flex flex-col items-start justify-center">
+  <div class="flex flex-col gap-2">
+    <img
+      id="background"
+      src={meOriginal.src}
+      alt="Me"
+      fetchpriority="high"
+      class="h-24 w-24 rounded-xl mb-2"
+    />
+    <div class="flex flex-col gap-1">
+      <h1 class="text-3xl">Software engineer and nature enjoyer.</h1>
+      <p>
+        I'm Max, a fullstack developer.<br />Currently located in Philadelphia.
+      </p>
+    </div>
+    <div class="flex gap-4">
+      <a href="https://www.linkedin.com/in/max-freundlich-0691a5236/">
+        <img
+          id="background"
+          src={linkedin.src}
+          alt="LinkedIn"
+          fetchpriority="high"
+          class="h-6 w-6"
+        />
+      </a>
+      <a href="https://github.com/maxwfreu">
+        <img
+          id="background"
+          src={github.src}
+          alt="GitHub"
+          fetchpriority="high"
+          class="h-6 w-6"
+        />
+      </a>
+      <a href="mailto:mfreundlich1@gmail.com">
+        <img
+          id="background"
+          src={mailIcon.src}
+          alt="Email"
+          fetchpriority="high"
+          class="h-6 w-6"
+        />
+      </a>
+    </div>
+  </div>
+</main>
