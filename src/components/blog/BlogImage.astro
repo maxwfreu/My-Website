@@ -4,9 +4,9 @@ import { Image } from "astro:assets";
 const { src, alt, subtitle } = Astro.props;
 ---
 
-<div class="flex justify-center my-8">
-  <div class="w-2/3 flex flex-col">
+<div class="flex justify-center my-8!">
+  <div class="w-2/3 flex flex-col prose-img:m-0">
     <Image src={src} alt={alt} class="rounded-lg" />
-    <p class="text-sm text-gray-500">{subtitle}</p>
+    <span class="text-sm text-gray-500">{subtitle}</span>
   </div>
 </div>
