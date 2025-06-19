@@ -20,16 +20,15 @@ const allBlogPosts = (await getCollection("blog"))
   <div class="flex flex-col gap-6">
     <div>
       <h2 class="text-xl">{title || "All Blog Posts"}</h2>
-      <p class="text-gray-500">I'm trying to write gooder and morer.</p>
     </div>
-    <div class="flex flex-col gap-2">
+    <div class="flex flex-col gap-4 md:gap-2">
       {
         allBlogPosts.map((blog) => (
-          <div>
-            <div class="inline-flex gap-2">
-              <span class="text-gray-500 italic">
-                {dayjs(blog.data.date).format("MMM DD, YYYY")}
-              </span>
+          <div class="flex flex-col md:flex-row md:gap-2">
+            <p class="text-gray-500 italic text-sm md:text-base md:min-w-24">
+              {dayjs(blog.data.date).format("MMM DD, YYYY")}
+            </p>
+            <div class="flex-1 gap-2">
               <Link href={`/blog/${blog.id}`}>{blog.data.title}</Link>
             </div>
           </div>
