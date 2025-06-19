@@ -3,6 +3,11 @@ import { getCollection } from "astro:content";
 import Link from "./Link.astro";
 import dayjs from "dayjs";
 
+interface Props {
+  limit?: number;
+  title?: string;
+}
+
 const { limit, title } = Astro.props;
 const allBlogPosts = (await getCollection("blog"))
   .sort(
